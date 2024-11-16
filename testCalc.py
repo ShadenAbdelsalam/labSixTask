@@ -3,10 +3,10 @@ from addCalc import add
 
 class TestCalculator(unittest.TestCase):
     def test_addition(self):
-        result1 = add(3, 7)
-        result2 = add(-1, 1)
+        result1 = add(5, 5)
+        result2 = add(-1, 0)
         self.assertEqual(result1, 10)
-        self.assertEqual(result2, 0)
+        self.assertEqual(result2, -1)
 
-if _name_ == "_main_":
-    unittest.main()
+if __name__ == "__main__":
+    unittest.main()
